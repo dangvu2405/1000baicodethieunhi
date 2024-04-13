@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int ucln(int a,int b){
+	if(b==0)
+	{
+		return a;
+	}
+	return ucln(b,a%b);
+}
+int main(){
+	int a,b;
+	cout<<"nhap a:";cin>>a;
+	cout<<"nhap b:";cin>>b;
+	int uoc=ucln(a,b);
+	cout<<uoc<<endl;
+}
